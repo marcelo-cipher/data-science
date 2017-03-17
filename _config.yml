@@ -1,6 +1,8 @@
 
 #'bundle exec jekyll serve'
 # accessed via {{ site.title }}, {{ site.email }}
+# jekyll server --watch --beurl ""
+
 
 title: My awesome Data Science blog
 email: marcelo.cipher@gmail.com.com

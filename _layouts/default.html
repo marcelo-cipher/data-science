@@ -8,6 +8,7 @@
   <!-- Site Properties -->
   <title>Awesome Data Science</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+  <link href="{{site.baseurl}}css/common.css" rel="stylesheet">
 
 <script
 			  src="https://code.jquery.com/jquery-3.2.0.min.js"
@@ -20,23 +21,19 @@
 </head>
 	<body>
 
+		<header>
+			{% include nav.html navclass='ui secondary pointing menu'%}
+		</header>
 
-		<div class="ui secondary pointing menu">
-		  <a href="index.html"  class="item">
-		    Home
-		  </a>
-		  <a href="{{site.baseurl}}/news.html" class="item">
-		    News
-		  </a>
-		  <a href="{{site.baseurl}}/friends.html" class="item active">
-		    Friends
-		  </a>
-
-		</div>
-
-
-		{{content}}
-
+			{{content}}
+		<footer>
+			<hr/>
+			<!-- {% include nav.html navclass='ui text menu '%}
+			-->
+			<center>
+			&copy; Data Science Blog
+			</center>
+		</footer>
 	</body>
 
 	
